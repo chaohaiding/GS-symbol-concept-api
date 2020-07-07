@@ -33,12 +33,13 @@ Return JSON object schame:{'status':200, data:[]},
 Query Example: baseURL/api/symbol/query?concept=/c/en/dog&symbol_set=arasaac&limit=4&exclude=/c/en/canine,/c/en/loyal_friend.
 Return Example:
 ```javascript
-{"status":200,"data":[{"weight":6,"label":"pet","concept":"/c/en/pet","lang":"en","popularity":697},{"weight":5.291502622129181,"label":"mammal","concept":"/c/en/mammal","lang":"en","popularity":1000},{"weight":3.4641016151377544,"label":"a good friend","concept":"/c/en/good_friend","lang":"en","popularity":8},{"weight":2.82842712474619,"label":"a four legged animal","concept":"/c/en/four_legged_animal","lang":"en","popularity":3}]}```
-
-*Tag object* includes weight: number, label: text label of the tag, concept: concept of the tag, lang: language, popularity: the length of edges this concept contains, which means how many other concepts linked to this tag. Popularity has been set to maximum 1000 at the moment (It is still a little bit slow).
+{"status":200,"data":[{"weight":6,"label":"pet","concept":"/c/en/pet","lang":"en","popularity":697},{"weight":5.291502622129181,"label":"mammal","concept":"/c/en/mammal","lang":"en","popularity":1000},{"weight":3.4641016151377544,"label":"a good friend","concept":"/c/en/good_friend","lang":"en","popularity":8},{"weight":2.82842712474619,"label":"a four legged animal","concept":"/c/en/four_legged_animal","lang":"en","popularity":3}]}
+```
+*Tag object*  includes weight: number, label: text label of the tag, concept: concept of the tag, lang: language, popularity: the length of edges this concept contains, which means how many other concepts linked to this tag. Popularity has been set to maximum 1000 at the moment (It is still a little bit slow).
 
 
 ###  Bulk query
+
 ```javascript
 HTTP POST baseURL/api/symbolset/query with body data parameters: {symbol_set: xxx, limit:xxx, symbol_concepts:xx,xx,xx}
 ```
