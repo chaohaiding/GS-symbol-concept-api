@@ -4,7 +4,6 @@ const {
 const cheerio = require('cheerio');
 const axios = require('axios')
 const validator = require('validator');
-const jsonld = require('jsonld');
 const CONCEPTNET_API = process.env.CONCEPTNET_API;
 const Tag = require('../models/Tag');
 
